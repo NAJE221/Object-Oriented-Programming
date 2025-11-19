@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Artem\\Desktop\\ООП\\OOP\\OOP\\OOP.csproj": {}
+    "C:\\Users\\Artem\\Desktop\\Object-Oriented-Programming\\OOP\\OOP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Artem\\Desktop\\ООП\\OOP\\OOP\\OOP.csproj": {
+    "C:\\Users\\Artem\\Desktop\\Object-Oriented-Programming\\OOP\\OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Artem\\Desktop\\ООП\\OOP\\OOP\\OOP.csproj",
+        "projectUniqueName": "C:\\Users\\Artem\\Desktop\\Object-Oriented-Programming\\OOP\\OOP.csproj",
         "projectName": "OOP",
-        "projectPath": "C:\\Users\\Artem\\Desktop\\ООП\\OOP\\OOP\\OOP.csproj",
+        "projectPath": "C:\\Users\\Artem\\Desktop\\Object-Oriented-Programming\\OOP\\OOP.csproj",
         "packagesPath": "C:\\Users\\Artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Artem\\Desktop\\ООП\\OOP\\OOP\\obj\\",
+        "outputPath": "C:\\Users\\Artem\\Desktop\\Object-Oriented-Programming\\OOP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Artem\\AppData\\Roaming\\NuGet\\NuGet.Config"

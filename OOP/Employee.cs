@@ -29,11 +29,7 @@ public class Employee
     {
         return 0;
     }
-
-    public virtual string GetInfo()
-    {
-        return ($"ЗП: {DecimalExtensions.ToCurrencyFormat(Salary)}");
-    }
+    
 }
 
 public class Manager : Employee
@@ -49,12 +45,7 @@ public class Manager : Employee
     {
         return Salary + (Salary * 0.15m);
     }
-
-    public override string GetInfo()
-    {
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        return ($"ЗП: {DecimalExtensions.ToCurrencyFormat(CalculateBonus())}, Размер команды: {TeamSize}");
-    }
+    
 }
 
 public class Developer : Employee
@@ -70,12 +61,7 @@ public class Developer : Employee
     {
         return Salary + (Salary * 0.05m) + (ProjectComplexityScore * 0.01m);
     }
-
-    public override string GetInfo()
-    {
-        Console.ForegroundColor = ConsoleColor.DarkGreen;
-        return ($"Уровень сложности проекта: {ProjectComplexityScore}%, ЗП: {DecimalExtensions.ToCurrencyFormat(CalculateBonus())}");
-    }
+    
 }
 
 
@@ -88,10 +74,9 @@ public class Trainee : Employee
         SchoolName = schoolName;
     }
 
-    public override string GetInfo()
+    public override decimal CalculateBonus()
     {
-        Console.ForegroundColor = ConsoleColor.Green;
-        return ($"ЗП: {Salary}");
+        return Salary;
     }
 }
 
@@ -130,8 +115,7 @@ public class PayrollProcessor
         {
             Console.WriteLine(emp.DisplayFormalInfo());
             decimal bonus = emp.CalculateBonus();
-            Console.WriteLine($"  Начислен бонус: {bonus.ToCurrencyFormat()}");
-            Console.WriteLine();
+            Console.WriteLine($" Бонус + ЗП: {bonus.ToCurrencyFormat()}");
         }
     }
 }
